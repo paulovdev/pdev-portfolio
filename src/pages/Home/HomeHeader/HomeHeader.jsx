@@ -32,8 +32,8 @@ const HomeHeader = () => {
                 Hi, I'm Paulo Vitor, an independent front-end developer specializing in crafting immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.
             </h2>
             <button>
-                <IoFlashSharp />
-                Available for hire
+                <div className="ball-green"></div>
+                Available for projects
             </button>
         </div>
     )

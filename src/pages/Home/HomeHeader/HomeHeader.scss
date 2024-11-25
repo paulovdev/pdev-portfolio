@@ -137,7 +137,7 @@
 
         border-radius: 2rem;
         border: none;
-        background-color: var(--btn);
+        background-color: var(--bg-2);
 
         color: var(--p);
 
@@ -149,14 +149,65 @@
         cursor: pointer;
         transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-        svg {
-            font-size: 16px;
+        .ball-green {
+            width: 10px;
+            height: 10px;
+
+            background-color: #0f0;
+            border-radius: 100%;
+
+            box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.5);
+
+            position: relative;
         }
 
-        &:hover {
-            background-color: var(--btn-2);
-            color: var(--p-2);
+        .ball-green {
+            width: 10px;
+            height: 10px;
+
+            background-color: #0f0;
+            border-radius: 100%;
+
+            box-shadow: 0 0 5px 2px rgba(0, 255, 0, 0.5);
+
+            position: relative;
         }
+
+        .ball-green::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+
+            background-color: rgba(0, 255, 0, 0.2);
+            border-radius: 100%;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            animation: radar-pulse 3s infinite;
+        }
+
+        @keyframes radar-pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(0.5);
+                opacity: 0.7;
+            }
+        }
+
+
+
     }
 }
 
