@@ -31,7 +31,7 @@ const HomeExperience = () => {
     return (
         <div className="home-experience">
             <h1>Experience</h1>
-            <p>My Experience</p>
+            <p>My experiences over the years</p>
             <div className="timeline">
                 <div className="timeline-line"></div>
                 {experiences.map((exp, index) => (

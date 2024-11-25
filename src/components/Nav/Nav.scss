@@ -17,11 +17,11 @@ header {
         width: fit-content;
 
         margin: 0 auto;
-        padding: .5rem;
+        padding: 1rem;
 
         background-color: var(--bg-nav);
         backdrop-filter: blur(10px);
-        border-radius: 2rem;
+        border-radius: 5rem;
 
         overflow: hidden;
 
@@ -33,7 +33,7 @@ header {
 
             a {
                 width: fit-content;
-                padding: .8rem 1rem ;
+                padding: .8rem 1rem;
 
                 font-size: .9rem;
                 font-weight: 500;
@@ -63,7 +63,7 @@ header {
                 }
 
                 &.active {
-                    padding: .8rem 1rem;
+                    padding: .8rem 1.5rem;
                 }
             }
         }

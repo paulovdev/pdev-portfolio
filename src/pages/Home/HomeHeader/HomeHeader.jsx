@@ -28,7 +28,6 @@ const HomeHeader = () => {
 
                 </div>
             </div>
-            <span>ABOUT ME</span>
             <h2>
                 Hi, I'm Paulo Vitor, an independent front-end developer specializing in crafting immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.
             </h2>

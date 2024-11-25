@@ -34,7 +34,7 @@ const TopNav = () => {
                     <div className="icon">
                         <FaLocationDot />
                     </div>
-                    <p>Rio de Janeiro, RJ</p>
+                    <p>Brazil</p>
                     <span>  </span>
                     <div className="icon">
                         <GoClockFill />
@@ -44,7 +44,7 @@ const TopNav = () => {
 
                 <li>
                     <div className="theme-switch">
-                        <FaGlobe size={42} />
+                        <FaGlobe />
                     </div>
                     <ThemeChange />
                 </li>

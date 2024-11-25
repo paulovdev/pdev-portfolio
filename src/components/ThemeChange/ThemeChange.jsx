@@ -16,9 +16,9 @@ function ThemeChange() {
     return (
         <div onClick={handleToggle} className="toggle-switch">
             {theme === "dark" ? (
-                <IoMoon size={42} className="icon moon" />
+                <IoMoon />
             ) : (
-                <IoSunnySharp size={42} className="icon sun" />
+                <IoSunnySharp />
             )}
         </div>
     );

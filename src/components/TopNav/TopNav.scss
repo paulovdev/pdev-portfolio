@@ -7,7 +7,7 @@
         padding: .5rem;
 
         background-color: var(--bg-2);
-        border-radius: 5rem;
+        border-radius: 3rem;
 
         display: flex;
         align-items: center;
@@ -29,8 +29,8 @@
             }
 
             .icon {
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
 
                 padding: .1rem;
 
@@ -42,28 +42,28 @@
                 justify-content: center;
 
                 svg {
-                    font-size: 16px;
+                    font-size: 18px;
                     color: var(--p);
                 }
             }
 
             .toggle-switch,
             .theme-switch {
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
+
+                padding: .1rem;
 
                 border-radius: 100%;
-
+                border: 1px solid var(--border);
 
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-                cursor: pointer;
-                transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-
                 svg {
-                    padding: .3rem;
+                    font-size: 18px !important;
+                    color: var(--p);
                 }
             }
 
@@ -74,24 +74,24 @@
         }
     }
 }
+
 @media (max-width:768px) {
     #top-nav {
-  
         ul {
 
             gap: 1rem;
-    
+
             li {
-                
+
                 gap: .5rem;
-    
+
                 p {
                     font-size: .8rem;
-                   
+
                 }
-    
-              
-    
+
+
+
             }
         }
     }
