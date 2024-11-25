@@ -74,3 +74,25 @@
         }
     }
 }
+@media (max-width:768px) {
+    #top-nav {
+  
+        ul {
+
+            gap: 1rem;
+    
+            li {
+                
+                gap: .5rem;
+    
+                p {
+                    font-size: .8rem;
+                   
+                }
+    
+              
+    
+            }
+        }
+    }
+}
