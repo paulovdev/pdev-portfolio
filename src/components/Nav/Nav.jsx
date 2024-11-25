@@ -4,50 +4,28 @@ import { MdHomeFilled, MdInfo, MdWork, MdPhone } from "react-icons/md";
 import "./Nav.scss";
 
 const Nav = () => {
-    const renderIcon = (isActive, Icon) => isActive ? <Icon /> : null;
-
     return (
         <header>
             <nav>
                 <ul>
                     <li>
                         <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
-                            {({ isActive }) => (
-                                <>
-                                    {renderIcon(isActive, MdHomeFilled)}
-                                    Home
-                                </>
-                            )}
+                            <MdHomeFilled />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
-                            {({ isActive }) => (
-                                <>
-                                    {renderIcon(isActive, MdInfo)}
-                                    About
-                                </>
-                            )}
+                            <MdInfo />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
-                            {({ isActive }) => (
-                                <>
-                                    {renderIcon(isActive, MdWork)}
-                                    Works
-                                </>
-                            )}
+                            <MdWork />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
-                            {({ isActive }) => (
-                                <>
-                                    {renderIcon(isActive, MdPhone)}
-                                    Contact
-                                </>
-                            )}
+                            <MdPhone />
                         </NavLink>
                     </li>
                 </ul>
