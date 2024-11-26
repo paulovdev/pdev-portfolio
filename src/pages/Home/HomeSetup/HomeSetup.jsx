@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { CgClose } from 'react-icons/cg';
+import React, { useState, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 import './HomeSetup.scss';
 
 const HomeSetup = () => {
-    const [searchTerm, setSearchTerm] = useState('');
-    const [selectedCategory, setSelectedCategory] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState('all');
     const [visibleItems, setVisibleItems] = useState(8);
+    const swiperRef = useRef(null);
 
     const setupItems = [
         { title: 'Processor', description: 'Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads', category: 'components' },
@@ -33,17 +35,6 @@ const HomeSetup = () => {
 
     const categories = ['all', 'components', 'peripherals', 'accessories', 'furniture', 'network'];
 
-    const filteredItems = setupItems.filter(item => {
-        const matchesSearchTerm = item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            item.description.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesCategory = selectedCategory === 'all' || item.category === selectedCategory || selectedCategory === '';
-        return matchesSearchTerm && matchesCategory;
-    });
-
-    const clearSearch = () => {
-        setSearchTerm('');
-    };
-
     const showMoreItems = () => {
         setVisibleItems(prevVisibleItems => prevVisibleItems + 8);
     };
@@ -53,38 +44,40 @@ const HomeSetup = () => {
             <div className="home-setup-sticky">
                 <h1>Setup</h1>
                 <p>Here you will find the main equipment I use in my setup.</p>
-                <div className="filters">
-                    <input
-                        type="text"
-                        placeholder="Search by title or description..."
-                        value={searchTerm}
-                        onChange={e => setSearchTerm(e.target.value)}
-                    />
-                    <button onClick={clearSearch}><CgClose /></button>
-                </div>
-                <div className="categories">
-                    {categories.map(category => (
-                        <button
-                            key={category}
-                            className={selectedCategory === category ? 'active' : ''}
-                            onClick={() => setSelectedCategory(category)}
-                        >
-                            {category.charAt(0).toUpperCase() + category.slice(1)}
-                        </button>
-                    ))}
-                </div>
             </div>
-
+            <div className="categories">
+                <Swiper
+                    spaceBetween={15}
+                    slidesPerView={4}
+                    onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    touchStartPreventDefault={false}
+                    preventClicks={false}
+                >
+                    {categories.map((category, index) => (
+                        <SwiperSlide key={index}>
+                            <button
+                                key={category}
+                                className={selectedCategory === category ? 'active' : ''}
+                                onClick={() => setSelectedCategory(category)}
+                            >
+                                {category.charAt(0).toUpperCase() + category.slice(1)}
+                            </button>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
             <ul>
-                {filteredItems.length > 0 ? filteredItems.slice(0, visibleItems).map((item, index) => (
-                    <li key={index}>
-                        <strong>{item.title}</strong>
-                        <p>{item.description}</p>
-                    </li>
-                )) : <p>No results for your search</p>
-                }
+                {setupItems
+                    .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                    .slice(0, visibleItems)
+                    .map((item, index) => (
+                        <li key={index}>
+                            <strong>{item.title}</strong>
+                            <p>{item.description}</p>
+                        </li>
+                    ))}
             </ul>
-            {visibleItems < filteredItems.length && (
+            {visibleItems < setupItems.length && (
                 <div className="show-more">
                     <button onClick={showMoreItems}>Show more</button>
                 </div>

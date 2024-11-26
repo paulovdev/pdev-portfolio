@@ -29,27 +29,28 @@ const TopNav = () => {
 
     return (
         <div id='top-nav'>
-            <ul>
-                <li>
-                    <div className="icon">
-                        <FaLocationDot />
-                    </div>
-                    <p>Brazil</p>
-                    <span>  </span>
-                    <div className="icon">
-                        <GoClockFill />
-                    </div>
-                    <p>{formatTime(time)}</p>
-                </li>
+            <div className="top-nav-container">
+                <ul>
+                    <li>
+                        <div className="icon">
+                            <FaLocationDot />
+                        </div>
+                        <p>Brazil</p>
+                        <span>  </span>
+                        <div className="icon">
+                            <GoClockFill />
+                        </div>
+                        <p>{formatTime(time)}</p>
+                    </li>
 
-                <li>
-                    <div className="theme-switch">
-                        <FaGlobe />
-                    </div>
-                    <ThemeChange />
-                </li>
-            </ul>
-            <div className="border-bottom"></div>
+                    <li>
+                        <div className="theme-switch">
+                            <FaGlobe />
+                        </div>
+                        <ThemeChange />
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 }

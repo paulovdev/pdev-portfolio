@@ -1,16 +1,16 @@
 import React from "react";
 
-import "./Home.scss";
 import HomeHeader from "./HomeHeader/HomeHeader";
 import HomeWorks from "./HomeWorks/HomeWorks";
 import HomeSetup from './HomeSetup/HomeSetup';
 import HomeStack from "./HomeStack/HomeStack"
-import TopNav from "../../components/TopNav/TopNav";
 import HomeExperience from "./HomeExperience/HomeExperience";
+
+import "./Home.scss";
+
 const Home = () => {
     return (
-        <section id="hero">
-            <TopNav />
+        <section id="home">
             <HomeHeader />
             <div className="border-left"></div>
             <HomeWorks />
