@@ -5,28 +5,25 @@ import './HomeExperience.scss';
 const HomeExperience = () => {
     const experiences = [
         {
-            year: "May 2016 – Jan 2019",
-            company: "Salesforce",
-            location: "Dublin, Ireland",
-            icon: <FaBuilding />
-        }, {
-            year: "May 2016 – Jan 2019",
-            company: "Salesforce",
-            location: "Dublin, Ireland",
+            year: "2019 – 2020",
+            company: "Rocketseat",
+            role: "Ignite Course",
             icon: <FaGraduationCap />
         },
         {
-            year: "May 2016 – Jan 2019",
-            company: "Salesforce",
-            location: "Dublin, Ireland",
+            year: "2021 – 2022",
+            company: "Freelance",
+            role: "Front-end Developer",
             icon: <FaBuilding />
-        }, {
-            year: "May 2016 – Jan 2019",
-            company: "Salesforce",
-            location: "Dublin, Ireland",
-            icon: <FaGraduationCap />
         },
+        {
+            year: "2022 – Present",
+            company: "Elevadores Salta",
+            role: "Electrical Technician",
+            icon: <FaBuilding />
+        }
     ];
+
 
     return (
         <div className="home-experience">
@@ -41,7 +38,7 @@ const HomeExperience = () => {
 
                         <div className="timeline-card">
                             <h3>{exp.company}</h3>
-                            <p>{exp.location}</p>
+                            <p>{exp.role}</p>
                         </div>
                     </div>
 

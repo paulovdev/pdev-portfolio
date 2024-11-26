@@ -15,7 +15,7 @@
         width: 100%;
         height: 1px;
 
-        margin: 5rem auto;
+        margin: 3rem auto;
 
         background-color: var(--border);
         border-radius: 1rem;
@@ -26,17 +26,6 @@
 @media (max-width:768px) {
     #hero {
         margin: 2vh auto;
-
-        .border-left {
-            width: 100%;
-            height: 1px;
-
-            margin: 3rem auto;
-
-            background-color: var(--border);
-            border-radius: 1rem;
-
-        }
     }
 
 }
