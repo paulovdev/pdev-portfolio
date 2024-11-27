@@ -130,6 +130,8 @@
                 justify-content: center;
                 flex-direction: column;
 
+                text-align: center;
+
                 h3 {
                     color: var(--p);
                     font-size: 1rem;
@@ -149,7 +151,7 @@
         position: relative;
 
         width: fit-content;
-        
+
         bottom: 30px;
 
         padding: .3rem 1.3rem;

@@ -120,6 +120,33 @@
             }
 
         }
+
+        button {
+            width: 100%;
+            padding: .8rem 2rem .8rem 1.5rem;
+
+            font-size: .9rem;
+            font-weight: 500;
+
+            border-radius: .8rem;
+            border: none;
+            background-color: var(--bg-2);
+
+            color: var(--p);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            cursor: pointer;
+            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+            &:hover{
+                background-color: var(--bg-3);
+                color: var(--p-2);
+            }
+        }
     }
 
     h2 {
