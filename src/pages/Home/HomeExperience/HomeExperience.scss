@@ -73,7 +73,7 @@
 
                 top: 10px;
 
-                padding: .5rem 2.5rem;
+                padding: .5rem 1.5rem;
 
                 font-size: .85rem;
                 font-weight: 400;
@@ -143,6 +143,26 @@
                 }
             }
         }
+    }
+
+    .end {
+        position: relative;
+
+        width: fit-content;
+        
+        bottom: 30px;
+
+        padding: .3rem 1.3rem;
+
+        font-size: .7rem;
+        font-weight: 700;
+
+        color: var(--p-2);
+
+        background-color: var(--bg-3);
+        border-radius: 1rem;
+
+        text-align: center;
     }
 }
 
@@ -240,6 +260,10 @@
 
                 }
             }
+        }
+
+        .end {
+            bottom: 60px;
         }
     }
 }

@@ -15,11 +15,12 @@ const Home = () => {
             <div className="border-left"></div>
             <HomeWorks />
             <div className="border-left"></div>
+            <HomeExperience />
+            <div className="border-left"></div>
             <HomeStack />
             <div className="border-left"></div>
             <HomeSetup />
             <div className="border-left"></div>
-            <HomeExperience />
         </section>
     );
 };

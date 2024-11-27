@@ -5,23 +5,30 @@ import './HomeExperience.scss';
 const HomeExperience = () => {
     const experiences = [
         {
-            year: "2019 – 2020",
-            company: "Rocketseat",
-            role: "Ignite Course",
+            year: "Sep 2024 – 2026",
+            company: "Anhanguera",
+            role: "Software Enginner",
             icon: <FaGraduationCap />
         },
         {
-            year: "2021 – 2022",
+            year: "Mar 2022 – Present",
+            company: "Elevadores Salta",
+            role: "Electrical Technician",
+            icon: <FaBuilding />
+        },
+        {
+            year: "Oct 2021 – Nov 2022",
             company: "Freelance",
             role: "Front-end Developer",
             icon: <FaBuilding />
         },
         {
-            year: "2022 – Present",
-            company: "Elevadores Salta",
-            role: "Electrical Technician",
-            icon: <FaBuilding />
+            year: "Fev 2021 – Jan 2022",
+            company: "Rocketseat",
+            role: "Ignite Course",
+            icon: <FaGraduationCap />
         }
+
     ];
 
 
@@ -31,6 +38,7 @@ const HomeExperience = () => {
             <p>My experiences over the years</p>
             <div className="timeline">
                 <div className="timeline-line"></div>
+
                 {experiences.map((exp, index) => (
                     <div className="timeline-item" key={index}>
                         <div className="timeline-year">{exp.year}</div>
@@ -43,6 +51,7 @@ const HomeExperience = () => {
                     </div>
 
                 ))}
+                <div className="end">07/09/2003</div>
             </div>
         </div>
     );

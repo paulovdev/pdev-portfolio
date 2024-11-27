@@ -21,11 +21,23 @@ const HomeStack = () => {
             subTitle: "All-in-one workspace"
         },
         {
+            img: "/stacks/figma.png",
+            title: "Figma",
+            subTitle: "Design platform"
+        },
+        {
+            img: "/stacks/vs-code.png",
+            title: "VS Code",
+            subTitle: "Code editor"
+        },
+        {
             img: "/stacks/chat-gpt.png",
-            title: "Chat GPT 4",
-            subTitle: "AI text generator"
-        }
+            title: "Open AI",
+            subTitle: "AI-powered language"
+        },
     ];
+
+
 
 
 
