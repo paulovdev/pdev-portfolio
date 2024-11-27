@@ -69,3 +69,110 @@ header {
         }
     }
 }
+
+@media (max-width:320px) {
+    header {
+        position: fixed;
+        width: 100%;
+
+        bottom: 15px;
+        left: 0;
+
+        padding: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 998;
+
+        nav {
+            position: relative;
+            width: fit-content;
+
+            margin: 0 auto;
+            padding: .8rem;
+
+            background-color: var(--bg-nav);
+            backdrop-filter: blur(10px);
+            border-radius: 5rem;
+
+            overflow: hidden;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+
+                a {
+                    width: fit-content;
+                    padding: .5rem .8rem;
+
+                    font-size: .9rem;
+                    font-weight: 500;
+
+                    border-radius: 2rem;
+                    border: none;
+                    background-color: var(--btn);
+                    color: var(--p);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+
+                    cursor: pointer;
+                    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                    svg {
+                        font-size: 22px;
+                    }
+
+                    &:hover,
+                    &.active {
+                        background-color: var(--bg-3);
+                        color: var(--p-2);
+
+                    }
+
+                    &.active {
+                        padding: .5rem 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:162px) and (max-height:197px) {
+    header {
+        bottom: 15px;
+        padding: 1px;
+
+        nav {
+
+            padding: .5rem;
+
+            ul {
+
+                gap: .5rem;
+
+                a {
+
+                    padding: .3rem .3rem;
+
+                    font-size: .5rem;
+
+
+                    svg {
+                        font-size: 12px;
+                    }
+
+                    &.active {
+                        padding: .3rem .3rem;
+                    }
+                }
+            }
+        }
+    }
+}

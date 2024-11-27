@@ -1,13 +1,24 @@
-import React, { useState, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+import { useRef, useLayoutEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+
+
 
 import './HomeSetup.scss';
 
 const HomeSetup = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [visibleItems, setVisibleItems] = useState(8);
-    const swiperRef = useRef(null);
+    const containerRef = useRef(null);
+    const [constraints, setConstraints] = useState({ left: 0, right: 0 });
+
+    useLayoutEffect(() => {
+        if (containerRef.current) {
+            setConstraints({
+                left: -containerRef.current.scrollWidth + containerRef.current.clientWidth,
+                right: 0
+            });
+        }
+    }, [containerRef.current]);
 
     const setupItems = [
         { title: 'Processor', description: 'Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads', category: 'components' },
@@ -45,26 +56,23 @@ const HomeSetup = () => {
                 <h1>Setup</h1>
                 <p>Here you will find the main equipment I use in my setup.</p>
             </div>
-            <div className="categories">
-                <Swiper
-                    spaceBetween={15}
-                    slidesPerView={4}
-                    onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    touchStartPreventDefault={false}
-                    preventClicks={false}
+            <div className="categories-container" ref={containerRef}>
+                <motion.div
+                    className="categories"
+                    drag="x"
+                    dragConstraints={constraints}
                 >
                     {categories.map((category, index) => (
-                        <SwiperSlide key={index}>
-                            <button
-                                key={category}
-                                className={selectedCategory === category ? 'active' : ''}
-                                onClick={() => setSelectedCategory(category)}
-                            >
-                                {category.charAt(0).toUpperCase() + category.slice(1)}
-                            </button>
-                        </SwiperSlide>
+                        <motion.button
+                            key={index}
+                            className={selectedCategory === category ? 'active' : ''}
+                            onClick={() => setSelectedCategory(category)}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                        </motion.button>
                     ))}
-                </Swiper>
+                </motion.div>
             </div>
             <ul>
                 {setupItems

@@ -42,58 +42,50 @@
 
     }
 
-    .categories {
-        position: sticky;
+    .categories-container {
+        position: relative;
         width: 100%;
 
-        top: 0;
+        overflow: hidden;
+        user-select: none;
+    }
+
+    .categories {
+        width: max-content;
 
         padding: 2rem 0 1rem 0;
-
-
-        background-color: var(--bg);
 
         display: flex;
         align-items: center;
         gap: 1rem;
 
-        overflow: hidden;
-        z-index: 997;
-
         button {
             width: fit-content;
-            padding: .8rem 1.2rem;
+            padding: 0.8rem 1.2rem;
 
-            font-size: .9rem;
+            font-size: 0.9rem;
             font-weight: 500;
 
             border-radius: 2rem;
             border: none;
             background-color: var(--btn);
+
             color: var(--p);
 
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 1rem;
-
+            
             cursor: pointer;
-            transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
             &:hover,
             &.active {
                 background-color: var(--bg-3);
                 color: var(--p-2);
-
-            }
-
-            &.active {
-                padding: .8rem 1.5rem;
             }
         }
-
-
     }
 
     ul {
@@ -217,8 +209,12 @@
 
 }
 
-.swiper-slide-active,
-.swiper-slide {
-    width: auto !important;
 
+
+.swiper-wrapper {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    gap: 1rem !important;
 }

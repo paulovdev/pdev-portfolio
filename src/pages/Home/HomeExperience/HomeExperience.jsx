@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaBuilding, FaGraduationCap } from 'react-icons/fa'; // Importando ícones
+import { FaBuilding, FaGraduationCap } from 'react-icons/fa';
+import { PiBabyFill } from "react-icons/pi";
+
+
 import './HomeExperience.scss';
 
 const HomeExperience = () => {
@@ -8,25 +11,25 @@ const HomeExperience = () => {
             year: "Sep 2024 – 2028",
             company: "Anhanguera",
             role: "Software Enginner",
-            icon: <FaGraduationCap />
+            icon: <FaGraduationCap size={22} />
         },
         {
             year: "Mar 2022 – Present",
             company: "Elevadores Salta",
             role: "Electrical Technician",
-            icon: <FaBuilding />
+            icon: <FaBuilding size={18} />
         },
         {
             year: "Oct 2021 – Nov 2022",
             company: "Freelance",
             role: "Front-end Developer",
-            icon: <FaBuilding />
+            icon: <FaBuilding size={18} />
         },
         {
             year: "Fev 2021 – Jan 2022",
             company: "Rocketseat",
             role: "Ignite Course",
-            icon: <FaGraduationCap />
+            icon: <FaGraduationCap size={22} />
         }
 
     ];
@@ -51,7 +54,7 @@ const HomeExperience = () => {
                     </div>
 
                 ))}
-                <div className="end">07/09/2003</div>
+                <div className="end"><PiBabyFill size={22} color='#fff' /> Born in 2003</div>
             </div>
         </div>
     );

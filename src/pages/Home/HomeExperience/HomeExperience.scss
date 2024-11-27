@@ -43,7 +43,7 @@
         .timeline-line {
             position: absolute;
             width: 2px;
-            height: 90%;
+            height: 95%;
 
             top: 30px;
             bottom: 0;
@@ -151,20 +151,24 @@
         position: relative;
 
         width: fit-content;
+        height: 40px;
 
-        bottom: 30px;
 
-        padding: .3rem 1.3rem;
 
-        font-size: .7rem;
-        font-weight: 700;
+        padding: .8rem 1rem .8rem .8rem;
 
-        color: var(--p-2);
+        font-size: .8rem;
+        font-weight: 600;
 
-        background-color: var(--bg-3);
-        border-radius: 1rem;
+        color: var(--p);
 
-        text-align: center;
+        background-color: var(--bg-2);
+        border-radius: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem;
     }
 }
 
@@ -189,7 +193,7 @@
             .timeline-line {
                 position: absolute;
                 width: 2px;
-                height: 90%;
+
 
                 top: 30px;
                 bottom: 0;
@@ -258,14 +262,11 @@
                 }
 
                 .timeline-card {
+                    width: calc(50% + 15px);
                     bottom: 0;
 
                 }
             }
-        }
-
-        .end {
-            bottom: 60px;
         }
     }
 }

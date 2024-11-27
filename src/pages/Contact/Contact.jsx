@@ -12,7 +12,7 @@ const Contact = () => {
 
             <form className="contact-container" onClick={(e) => e.preventDefault()}>
                 <div className="input-wrapper">
-                    <input type="text" autoFocus autoComplete='name' placeholder='Name' />
+                    <input type="text" autoComplete='name' placeholder='Name' />
                     <input type="email" autoComplete='email' placeholder='E-mail' />
                 </div>
                 <textarea placeholder='Message'></textarea>
