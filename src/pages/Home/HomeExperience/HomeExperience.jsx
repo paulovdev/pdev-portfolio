@@ -11,29 +11,32 @@ const HomeExperience = () => {
             year: "Sep 2024 – 2028",
             company: "Anhanguera",
             role: "Software Enginner",
-            icon: <FaGraduationCap size={22} />
+            icon: <FaGraduationCap size={22} />,
+            span: <span style={{ color: "#f74c19" }}>.</span>
         },
         {
             year: "Mar 2022 – Present",
             company: "Elevadores Salta",
             role: "Electrical Technician",
-            icon: <FaBuilding size={18} />
+            icon: <FaBuilding size={18} />,
+            span: <span style={{ color: "#e9561f" }}>.</span>
         },
         {
             year: "Oct 2021 – Nov 2022",
             company: "Freelance",
             role: "Front-end Developer",
-            icon: <FaBuilding size={18} />
+            icon: <FaBuilding size={18} />,
+            span: <span style={{ color: "#00de00" }}>.</span>
         },
         {
             year: "Fev 2021 – Jan 2022",
             company: "Rocketseat",
             role: "Ignite Course",
-            icon: <FaGraduationCap size={22} />
+            icon: <FaGraduationCap size={22} />,
+            span: <span style={{ color: "#9453ee" }}>.</span>
         }
 
     ];
-
 
     return (
         <div className="home-experience">
@@ -48,7 +51,7 @@ const HomeExperience = () => {
                         <div className="timeline-icon">{exp.icon}</div>
 
                         <div className="timeline-card">
-                            <h3>{exp.company}</h3>
+                            <h3>{exp.company} {exp.span}</h3>
                             <p>{exp.role}</p>
                         </div>
                     </div>

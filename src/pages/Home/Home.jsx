@@ -7,6 +7,7 @@ import HomeStack from "./HomeStack/HomeStack"
 import HomeExperience from "./HomeExperience/HomeExperience";
 
 import "./Home.scss";
+import HomeUpdates from "./HomeUpdates/HomeUpdates";
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <div className="border-left"></div>
             <HomeSetup />
             <div className="border-left"></div>
+            <HomeUpdates />
         </section>
     );
 };
