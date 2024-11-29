@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBuilding, FaGraduationCap } from 'react-icons/fa';
 import { TbBabyCarriageFilled } from 'react-icons/tb';
-
+import { motion } from 'framer-motion';
 import './HomeExperience.scss';
 
 const HomeExperience = () => {
@@ -38,7 +38,18 @@ const HomeExperience = () => {
     ];
 
     return (
-        <div className="home-experience">
+        <motion.div className="home-experience"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.3,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Experience</h1>
             <p>My experiences over the years</p>
             <div className="timeline">
@@ -58,7 +69,7 @@ const HomeExperience = () => {
                 ))}
                 <div className="end"><TbBabyCarriageFilled size={18} /> Born in 2003</div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

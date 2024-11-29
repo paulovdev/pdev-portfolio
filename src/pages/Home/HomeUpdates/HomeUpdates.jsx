@@ -2,11 +2,23 @@ import React from 'react';
 
 import "./HomeUpdates.scss";
 import { BiBook, BiMusic } from 'react-icons/bi';
-import { MdMovie, MdOutlineMovie } from 'react-icons/md';
+import { MdOutlineMovie } from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const HomeUpdates = () => {
     return (
-        <div className="home-updates">
+        <motion.div className="home-updates"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.3,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Updates</h1>
             <p>about the my current projects, interests, and activities.</p>
             <ul>
@@ -36,7 +48,7 @@ const HomeUpdates = () => {
 
             </ul>
 
-        </div >
+        </motion.div >
     );
 }
 

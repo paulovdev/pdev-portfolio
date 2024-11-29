@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 import { GoLinkExternal } from "react-icons/go";
 
 import "./HomeWorks.scss";
@@ -30,7 +31,18 @@ const HomeWorks = () => {
     ];
 
     return (
-        <div className="home-works">
+        <motion.div className="home-works"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.3,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Selected works</h1>
             <p>Explore my selected portfolio works, showcasing my skills and achievements over the years.</p>
             <div className="works-container">
@@ -47,7 +59,7 @@ const HomeWorks = () => {
                     </a>
                 ))}
             </div>
-        </div>
+        </motion.div >
 
     )
 }

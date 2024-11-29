@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CgClose } from 'react-icons/cg';
 import { GoLinkExternal } from "react-icons/go";
+import { motion } from 'framer-motion';
 import './Works.scss';
 
 const Works = () => {
@@ -89,7 +90,12 @@ const Works = () => {
     };
 
     return (
-        <section id='works'>
+        <motion.section id='works'
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
             <h1>My Works</h1>
             <p>Explore my portfolio of projects spanning from 2021 to 2024.</p>
 
@@ -121,7 +127,7 @@ const Works = () => {
                     <p>No works found matching your search criteria.</p>
                 )}
             </div>
-        </section>
+        </motion.section>
     );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 import Nav from './components/Nav/Nav';
 import Home from './pages/Home/Home';
@@ -11,14 +12,16 @@ import Contact from './pages/Contact/Contact';
 const App = () => {
   return (
     <Router>
-      <TopNav />
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Works />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <ReactLenis root >
+        <TopNav />
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Works />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </ReactLenis>
     </Router>
   );
 };

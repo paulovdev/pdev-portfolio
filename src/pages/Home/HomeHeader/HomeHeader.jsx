@@ -1,12 +1,17 @@
 import React from 'react'
-import { IoFlashSharp } from "react-icons/io5";
+import { motion } from 'framer-motion';
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { VscVerifiedFilled } from "react-icons/vsc";
 import "./HomeHeader.scss";
 
 const HomeHeader = () => {
     return (
-        <div className="home-header">
+        <motion.div className="home-header"
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
             <div className="profile-content">
                 <div className="l-content">
                     <img src="/photo.jpg" alt="profile-photo" />
@@ -35,7 +40,7 @@ const HomeHeader = () => {
                 <div className="ball-green"></div>
                 Available for projects
             </button>
-        </div>
+        </motion.div>
     )
 }
 

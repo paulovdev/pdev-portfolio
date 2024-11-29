@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./HomeStack.scss";
+import { motion } from 'framer-motion';
 
 const HomeStack = () => {
 
@@ -37,13 +38,19 @@ const HomeStack = () => {
         },
     ];
 
-
-
-
-
-
     return (
-        <div className="home-stack">
+        <motion.div className="home-stack"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.3,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <h1>Stack</h1>
             <p>I frequently get asked about the software and services I use daily. To make it easier, I've listed everything in one place.</p>
             <ul>
@@ -61,7 +68,7 @@ const HomeStack = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </motion.div>
     )
 }
 

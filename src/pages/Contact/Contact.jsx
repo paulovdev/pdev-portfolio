@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
 import './Contact.scss';
 import { MdEmail, MdPhone } from 'react-icons/md';
 
@@ -7,7 +7,11 @@ const Contact = () => {
 
 
     return (
-        <section id='contact'>
+        <motion.section id='contact'
+            initial={{ opacity: 0, filter: "blur(10px)" }}
+            animate={{ opacity: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, filter: "blur(10px)" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>Work with me</h1>
             <p>Got an idea for a website or mobile app, or need some tips on product design? Don't hesitate to get in touch. My schedule fills up fast, so the earlier you reach out, the better for both of us. </p>
             <div className="contact-links">
@@ -24,7 +28,7 @@ const Contact = () => {
 
             </form>
             <h2>Avg. response: <span>24 hours</span></h2>
-        </section>
+        </motion.section>
     );
 }
 

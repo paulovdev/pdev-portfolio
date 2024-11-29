@@ -7,7 +7,7 @@ import HomeStack from "./HomeStack/HomeStack"
 import HomeExperience from "./HomeExperience/HomeExperience";
 
 import "./Home.scss";
-import HomeUpdates from "./HomeUpdates/HomeUpdates";
+import HomeUpdates from './HomeUpdates/HomeUpdates';
 
 const Home = () => {
     return (

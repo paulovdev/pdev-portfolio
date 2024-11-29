@@ -51,7 +51,18 @@ const HomeSetup = () => {
     };
 
     return (
-        <div className="home-setup">
+        <motion.div className="home-setup"
+            initial={{ opacity: 0 }}
+            whileInView={{
+                opacity: 1,
+                transition: {
+                    duration: 0.3,
+                    delay: 0.3,
+                    ease: [0.455, 0.03, 0.515, 0.955]
+                }
+            }}
+            viewport={{ once: true }}
+        >
             <div className="home-setup-sticky">
                 <h1>Setup</h1>
                 <p>Here you will find the main equipment I use in my setup.</p>
@@ -90,7 +101,7 @@ const HomeSetup = () => {
                     <button onClick={showMoreItems}>Show more</button>
                 </div>
             )}
-        </div>
+        </motion.div>
     );
 };
 
