@@ -177,6 +177,10 @@
         align-items: center;
         justify-content: center;
         gap: .8rem;
+
+        svg {
+            color: var(--p);
+        }
     }
 }
 

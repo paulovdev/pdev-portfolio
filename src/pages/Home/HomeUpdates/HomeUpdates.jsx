@@ -19,6 +19,7 @@ const HomeUpdates = () => {
                     <iframe
                         width="100%"
                         height="fit-content"
+
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/978299293&color=%23111111&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
                     ></iframe>
                 </li>
@@ -28,9 +29,7 @@ const HomeUpdates = () => {
                         width="100%"
                         height="fit-content"
                         src="https://www.youtube.com/embed/sfJG6IiA_s8"
-                        title="The Penguin | Official Trailer | Max"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
                         referrerpolicy="strict-origin-when-cross-origin"
                         allowfullscreen></iframe>
                 </li>

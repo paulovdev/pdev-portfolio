@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaBuilding, FaGraduationCap } from 'react-icons/fa';
-import { PiBabyFill } from "react-icons/pi";
-
+import { TbBabyCarriageFilled } from 'react-icons/tb';
 
 import './HomeExperience.scss';
 
@@ -57,7 +56,7 @@ const HomeExperience = () => {
                     </div>
 
                 ))}
-                <div className="end"><PiBabyFill size={22} color='#fff' /> Born in 2003</div>
+                <div className="end"><TbBabyCarriageFilled size={18} /> Born in 2003</div>
             </div>
         </div>
     );

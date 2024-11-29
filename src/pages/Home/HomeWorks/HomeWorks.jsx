@@ -22,7 +22,7 @@ const HomeWorks = () => {
         },
         {
             id: 3,
-            imgSrc: "/works/work-3.jpg",
+            imgSrc: "/works/work-3.png",
             title: "paulovdev",
             description: "paulovdev is a full portfolio website.",
             src: "https://paulovdev.framer.website/"

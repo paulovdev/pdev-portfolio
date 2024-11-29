@@ -23,24 +23,23 @@ const Works = () => {
         },
         {
             id: 3,
-            imgSrc: "/works/work-3.jpg",
+            imgSrc: "/works/work-3.png",
             title: "paulovdev",
             description: "paulovdev is a full portfolio website.",
             src: "https://paulovdev.framer.website/"
-        },
-        {
+        }, {
             id: 4,
-            imgSrc: "https://via.placeholder.com/150/0000FF/808080?text=Work+4",
-            title: "DevPortfolio",
-            description: "DevPortfolio is a sleek and modern portfolio for developers.",
-            src: "https://devportfolio.example.com"
+            imgSrc: "/works/work-4.png",
+            title: "The Batman",
+            description: "ShopEase is an e-commerce platform for easy online shopping.",
+            src: "https://shopease.example.com"
         },
         {
             id: 5,
-            imgSrc: "https://via.placeholder.com/150/FF0000/FFFFFF?text=Work+5",
-            title: "ShopEase",
-            description: "ShopEase is an e-commerce platform for easy online shopping.",
-            src: "https://shopease.example.com"
+            imgSrc: "/works/work-5.png",
+            title: "Meow Café",
+            description: "DevPortfolio is a sleek and modern portfolio for developers.",
+            src: "https://devportfolio.example.com"
         },
         {
             id: 6,
