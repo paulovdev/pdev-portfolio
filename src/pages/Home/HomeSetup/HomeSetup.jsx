@@ -6,8 +6,8 @@ import { IoIosArrowDown } from "react-icons/io";
 import './HomeSetup.scss';
 
 const HomeSetup = () => {
-    const [selectedCategory, setSelectedCategory] = useState('all');
-    const [visibleItems, setVisibleItems] = useState(8);
+    const [selectedCategory, setSelectedCategory] = useState('All');
+    const [visibleItems, setVisibleItems] = useState(5);
     const containerRef = useRef(null);
     const [constraints, setConstraints] = useState({ left: 0, right: 0 });
 
@@ -21,30 +21,30 @@ const HomeSetup = () => {
     }, [containerRef.current]);
 
     const setupItems = [
-        { title: 'Processor', description: 'Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads', category: 'components' },
-        { title: 'RAM', description: 'Team Group T-Force Vulcan Pichau, (2x32GB)', category: 'components' },
-        { title: 'Graphics Card', description: 'RX 6600 CLD 8GB ASRock AMD Radeon', category: 'components' },
-        { title: 'Motherboard', description: 'ASUS Prime H610M-E D4 LGA 1700', category: 'components' },
-        { title: 'Storage', description: 'SSD NVME 2 SSD 480GB XrayDisk', category: 'components' },
-        { title: 'Mouse', description: 'Logitech G Pro', category: 'peripherals' },
-        { title: 'Keyboard', description: 'Logitech G Pro', category: 'peripherals' },
-        { title: 'Monitor', description: 'AOC 21.5" LED Full HD', category: 'peripherals' },
-        { title: 'Case', description: 'Pichau HX300 Glass', category: 'components' },
-        { title: 'Headset', description: 'Havit, 50mm', category: 'peripherals' },
-        { title: 'Line Filter', description: 'DPS Clamper Energia 8 Black, 013000', category: 'accessories' },
-        { title: 'Gamer Cabinet', description: 'Pichau HX300 Glass Black, PG-HX3-G01', category: 'components' },
-        { title: 'Cooler for Processor', description: 'Cooler Master Hyper H410R 92mm Red Led, RR-H410-20PK-R1', category: 'components' },
-        { title: 'Gamer Chair', description: 'TGT Heron TX, Black and Gray, TGT-HRTX-BK01', category: 'furniture' },
-        { title: 'Speakers', description: 'Logitech Z333', category: 'peripherals' },
-        { title: 'Webcam', description: 'Logitech C920', category: 'peripherals' },
-        { title: 'Power Supply', description: 'Corsair CV550, 550W', category: 'components' },
-        { title: 'Extra Storage', description: 'Seagate 2TB External HDD', category: 'components' },
-        { title: 'Router', description: 'TP-Link Archer C6', category: 'network' },
-        { title: 'Microphone', description: 'Blue Yeti USB Microphone', category: 'peripherals' },
-        { title: 'VR Headset', description: 'Oculus Rift S', category: 'peripherals' }
+        { title: 'Processor', description: 'Intel Core i7-12700K, 3.6GHz, 12-core, 20-threads', category: 'Components' },
+        { title: 'RAM', description: 'Team Group T-Force Vulcan Pichau, (2x32GB)', category: 'Components' },
+        { title: 'Graphics Card', description: 'RX 6600 CLD 8GB ASRock AMD Radeon', category: 'Components' },
+        { title: 'Motherboard', description: 'ASUS Prime H610M-E D4 LGA 1700', category: 'Components' },
+        { title: 'Storage', description: 'SSD NVME 2 SSD 480GB XrayDisk', category: 'Components' },
+        { title: 'Mouse', description: 'Logitech G Pro', category: 'Peripherals' },
+        { title: 'Keyboard', description: 'Logitech G Pro', category: 'Peripherals' },
+        { title: 'Monitor', description: 'AOC 21.5" LED Full HD', category: 'Peripherals' },
+        { title: 'Case', description: 'Pichau HX300 Glass', category: 'Components' },
+        { title: 'Headset', description: 'Havit, 50mm', category: 'Peripherals' },
+        { title: 'Line Filter', description: 'DPS Clamper Energia 8 Black, 013000', category: 'Accessories' },
+        { title: 'Gamer Cabinet', description: 'Pichau HX300 Glass Black, PG-HX3-G01', category: 'Components' },
+        { title: 'Cooler for Processor', description: 'Cooler Master Hyper H410R 92mm Red Led, RR-H410-20PK-R1', category: 'Components' },
+        { title: 'Gamer Chair', description: 'TGT Heron TX, Black and Gray, TGT-HRTX-BK01', category: 'Furniture' },
+        { title: 'Speakers', description: 'Logitech Z333', category: 'Peripherals' },
+        { title: 'Webcam', description: 'Logitech C920', category: 'Peripherals' },
+        { title: 'Power Supply', description: 'Corsair CV550, 550W', category: 'Components' },
+        { title: 'Extra Storage', description: 'Seagate 2TB External HDD', category: 'Components' },
+        { title: 'Router', description: 'TP-Link Archer C6', category: 'Network' },
+        { title: 'Microphone', description: 'Blue Yeti USB Microphone', category: 'Peripherals' },
+        { title: 'VR Headset', description: 'Oculus Rift S', category: 'Peripherals' }
     ];
 
-    const categories = ['all', 'components', 'peripherals', 'accessories', 'furniture', 'network'];
+    const categories = ['All', 'Components', 'Peripherals', 'Network', 'Furniture', 'Accessories'];
 
     const showMoreItems = () => {
         setVisibleItems(prevVisibleItems => prevVisibleItems + 8);
@@ -80,14 +80,15 @@ const HomeSetup = () => {
                             onClick={() => setSelectedCategory(category)}
                             whileTap={{ scale: 0.95 }}
                         >
-                            {category.charAt(0).toUpperCase() + category.slice(1)}
+                            {category}
                         </motion.button>
                     ))}
                 </motion.div>
             </div>
+
             <ul>
                 {setupItems
-                    .filter(item => selectedCategory === 'all' || item.category === selectedCategory)
+                    .filter(item => selectedCategory === 'All' || item.category === selectedCategory)
                     .slice(0, visibleItems)
                     .map((item, index) => (
                         <li key={index}>

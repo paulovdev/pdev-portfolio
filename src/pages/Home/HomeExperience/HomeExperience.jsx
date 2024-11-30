@@ -7,7 +7,7 @@ import './HomeExperience.scss';
 const HomeExperience = () => {
     const experiences = [
         {
-            year: "Sep 2024 – 2028",
+            year: "Sep 2024 – Oct 2028",
             company: "Anhanguera",
             role: "Software Enginner",
             icon: <FaGraduationCap size={22} />,

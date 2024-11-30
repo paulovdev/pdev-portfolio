@@ -206,9 +206,12 @@
 
             &:hover {
                 .img-content {
+                    background-color: #222222;
+
                     img {
                         opacity: .5;
-                        transform: scale(1.1);
+                        border: 1px solid transparent;
+                        transform: scale(1.05);
                     }
                 }
 
