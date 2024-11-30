@@ -9,21 +9,21 @@ const HomeWorks = () => {
     const works = [
         {
             id: 1,
-            imgSrc: "/works/work-1.png",
+            imgSrc: "/works/work-1.webp",
             title: "Quimplo",
             description: "Quimplo is a marketplace website for selling templates.",
             src: "https://quimplo.online"
         },
         {
             id: 2,
-            imgSrc: "/works/work-2.png",
+            imgSrc: "/works/work-2.webp",
             title: "Paulin",
             description: "Paulin is a simple minimal portfolio website.",
             src: "https://post-and-publish.netlify.app/"
         },
         {
             id: 3,
-            imgSrc: "/works/work-3.png",
+            imgSrc: "/works/work-3.webp",
             title: "paulovdev",
             description: "paulovdev is a full portfolio website.",
             src: "https://paulovdev.framer.website/"

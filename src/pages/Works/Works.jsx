@@ -10,71 +10,71 @@ const Works = () => {
     const works = [
         {
             id: 1,
-            imgSrc: "/works/work-1.png",
+            imgSrc: "/works/work-1.webp",
             title: "Quimplo",
             description: "Quimplo is a marketplace website for selling templates.",
             src: "https://quimplo.online"
         },
         {
             id: 2,
-            imgSrc: "/works/work-2.png",
+            imgSrc: "/works/work-2.webp",
             title: "Paulin",
             description: "Paulin is a simple minimal portfolio website.",
             src: "https://post-and-publish.netlify.app/"
         },
         {
             id: 3,
-            imgSrc: "/works/work-3.png",
+            imgSrc: "/works/work-3.webp",
             title: "paulovdev",
             description: "paulovdev is a full portfolio website.",
             src: "https://paulovdev.framer.website/"
         }, {
             id: 4,
-            imgSrc: "/works/work-4.png",
+            imgSrc: "/works/work-4.webp",
             title: "The Batman",
             description: "ShopEase is an e-commerce platform for easy online shopping.",
             src: "https://shopease.example.com"
         },
         {
             id: 5,
-            imgSrc: "/works/work-5.png",
+            imgSrc: "/works/work-5.webp",
             title: "Meow Café",
             description: "DevPortfolio is a sleek and modern portfolio for developers.",
             src: "https://devportfolio.example.com"
         },
         {
             id: 6,
-            imgSrc: "https://via.placeholder.com/150/FFFF00/000000?text=Work+6",
-            title: "CreativeHub",
-            description: "CreativeHub is a platform for creative professionals to showcase their work.",
+            imgSrc: "",
+            title: "Coming soon",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
             src: "https://creativehub.example.com"
         },
         {
             id: 7,
-            imgSrc: "https://via.placeholder.com/150/00FF00/000000?text=Work+7",
-            title: "EduPlatform",
-            description: "EduPlatform is an educational website offering various online courses.",
+            imgSrc: "",
+            title: "Coming soon",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
             src: "https://eduplatform.example.com"
         },
         {
             id: 8,
-            imgSrc: "https://via.placeholder.com/150/FF00FF/FFFFFF?text=Work+8",
-            title: "HealthCarePro",
-            description: "HealthCarePro is a professional website for healthcare providers.",
+            imgSrc: "",
+            title: "Coming soon",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
             src: "https://healthcarepro.example.com"
         },
         {
             id: 9,
-            imgSrc: "https://via.placeholder.com/150/00FFFF/000000?text=Work+9",
-            title: "TravelBuddy",
-            description: "TravelBuddy is a travel blog and guide for adventurers.",
+            imgSrc: "",
+            title: "Coming soon",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
             src: "https://travelbuddy.example.com"
         },
         {
             id: 10,
-            imgSrc: "https://via.placeholder.com/150/FFA500/FFFFFF?text=Work+10",
-            title: "ArtGallery",
-            description: "ArtGallery is an online gallery for showcasing art pieces.",
+            imgSrc: "",
+            title: "Coming soon",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed omnis velit suscipit est praesentium sint error nihil eum eveniet.",
             src: "https://artgallery.example.com"
         }
     ];

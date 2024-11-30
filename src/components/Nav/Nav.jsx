@@ -9,22 +9,22 @@ const Nav = () => {
             <nav>
                 <ul>
                     <li >
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} >
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Home" >
                             <MdHomeFilled />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
+                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Projects">
                             <MdWork />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>
+                        <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
                             <MdMessage />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
                             <MdPhone />
                         </NavLink>
                     </li>

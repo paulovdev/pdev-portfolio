@@ -61,7 +61,7 @@ const HomeExperience = () => {
                         <div className="timeline-icon">{exp.icon}</div>
 
                         <div className="timeline-card">
-                            <h3>{exp.company} {exp.span}</h3>
+                            <h1>{exp.company} {exp.span}</h1>
                             <p>{exp.role}</p>
                         </div>
                     </div>
