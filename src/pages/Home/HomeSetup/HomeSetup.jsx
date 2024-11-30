@@ -1,7 +1,7 @@
 import { useRef, useLayoutEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-
+import { IoIosArrowDown } from "react-icons/io";
 
 import './HomeSetup.scss';
 
@@ -91,14 +91,14 @@ const HomeSetup = () => {
                     .slice(0, visibleItems)
                     .map((item, index) => (
                         <li key={index}>
-                            <strong>{item.title}</strong>
+                            <strong>{item.title} <span>{item.category}</span></strong>
                             <p>{item.description}</p>
                         </li>
                     ))}
             </ul>
             {visibleItems < setupItems.length && (
                 <div className="show-more">
-                    <button onClick={showMoreItems}>Show more</button>
+                    <button onClick={showMoreItems}><IoIosArrowDown />Show more</button>
                 </div>
             )}
         </motion.div>

@@ -34,7 +34,7 @@ const HomeHeader = () => {
                 </div>
             </div>
             <h2>
-                Hi, I'm Paulo Vitor, an independent front-end developer specializing in crafting immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.
+                Forward-thinking product designer specializing in crafting immersive and intuitive user experiences, consistently pushing the boundaries of design innovation.
             </h2>
             <button>
                 <div className="ball-green"></div>

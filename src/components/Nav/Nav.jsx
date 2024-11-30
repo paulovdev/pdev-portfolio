@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MdHomeFilled, MdInfo, MdWork, MdPhone } from "react-icons/md";
+import { MdHomeFilled, MdWork, MdPhone, MdMessage } from "react-icons/md";
 import "./Nav.scss";
 
 const Nav = () => {
@@ -14,13 +14,13 @@ const Nav = () => {
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
-                            <MdInfo />
+                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
+                            <MdWork />
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
-                            <MdWork />
+                        <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''}>
+                            <MdMessage />
                         </NavLink>
                     </li>
                     <li>
