@@ -13,7 +13,7 @@ const HomeUpdates = () => {
             whileInView={{
                 opacity: 1,
                 transition: {
-                    duration: 0.3,
+                    duration: 0.5,
                     delay: 0.3,
                     ease: [0.455, 0.03, 0.515, 0.955]
                 }

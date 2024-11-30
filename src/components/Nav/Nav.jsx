@@ -8,8 +8,8 @@ const Nav = () => {
         <header>
             <nav>
                 <ul>
-                    <li>
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+                    <li >
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} >
                             <MdHomeFilled />
                         </NavLink>
                     </li>
