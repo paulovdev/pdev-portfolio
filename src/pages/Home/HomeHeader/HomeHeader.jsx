@@ -14,7 +14,7 @@ const HomeHeader = () => {
         >
             <div className="profile-content">
                 <div className="l-content">
-                    <img src="/photo.jpg" alt="profile-photo" />
+                    <img src="/photo.webp" alt="profile-photo" />
                 </div>
                 <div className="r-content">
                     <h1>Paulo Vitor <VscVerifiedFilled /></h1>
