@@ -89,7 +89,7 @@ const BlogPost = () => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
             <div className="back-to-blogs">
-                <Link to={"/blog"}><GoArrowLeft />Back</Link>
+                <Link to={"/blog"}><GoArrowLeft />Blogs</Link>
             </div>
             <h1>{blog.title} <span>{blog.date}</span></h1>
             <div className="border-left"></div>

@@ -51,7 +51,7 @@ const HomeExperience = () => {
             viewport={{ once: true }}
         >
             <h1>Experience</h1>
-            <p>My experiences over the years</p>
+            <p>My experiences since I started studying programming</p>
             <div className="timeline">
                 <div className="timeline-line"></div>
 

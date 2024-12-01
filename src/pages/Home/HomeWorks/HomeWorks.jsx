@@ -43,8 +43,8 @@ const HomeWorks = () => {
             }}
             viewport={{ once: true }}
         >
-            <h1>Selected works</h1>
-            <p>Explore my selected portfolio works, showcasing my skills and achievements over the years.</p>
+            <h1>Recent works</h1>
+            <p>Explore my recent works, and the ones I'm still working on</p>
             <div className="works-container">
                 {works.map(work => (
                     <a href={work.src} target="_blank" className="w-content" key={work.id}>

@@ -21,7 +21,7 @@ const HomeUpdates = () => {
             viewport={{ once: true }}
         >
             <h1>Updates</h1>
-            <p>about the my current projects, interests, and activities.</p>
+            <p>What am I doing at the moment besides studying ;)</p>
             <ul>
                 <li>
                     <span><div className="icon"><BiBook /></div>Reading to:</span>

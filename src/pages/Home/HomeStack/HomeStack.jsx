@@ -52,7 +52,7 @@ const HomeStack = () => {
             viewport={{ once: true }}
         >
             <h1>Stack</h1>
-            <p>I frequently get asked about the software and services I use daily. To make it easier, I've listed everything in one place.</p>
+            <p>Tools that I always use in almost all of my work</p>
             <ul>
                 {stacks.map((stack, index) => (
                     <li key={index}>
