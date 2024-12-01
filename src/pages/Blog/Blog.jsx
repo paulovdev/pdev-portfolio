@@ -50,14 +50,13 @@ const Blog = () => {
 
       <div className="blog-container">
         {miniBlogs.map(blog => (
-          <div className="blog" key={blog.id}>
+          <Link to={`/blog/${blog.id}`} className="blog" key={blog.id}>
             <h2>{blog.title}</h2>
             <p>{blog.date}</p>
-            <Link to={`/blog/${blog.id}`}>Read more</Link>
-          </div>
+          </Link>
         ))}
       </div>
-    </motion.section>
+    </motion.section >
   );
 };
 

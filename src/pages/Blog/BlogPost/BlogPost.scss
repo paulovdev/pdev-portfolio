@@ -75,10 +75,8 @@
         cursor: pointer;
         transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-        &:hover,
-        &.active {
-            background-color: var(--bg-3);
-            color: var(--p-2);
+        &:hover {
+            background-color: var(--bg-2-hover);
         }
     }
 
