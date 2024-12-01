@@ -18,6 +18,21 @@ const miniBlogs = [
     id: 3,
     title: "Building a Strong Brand Identity",
     date: "Mar 18, 2024",
+  },
+  {
+    id: 1,
+    title: "The Art of User-Centric Design",
+    date: "Mar 8, 2024",
+  },
+  {
+    id: 2,
+    title: "Maximizing Efficiency with Automation",
+    date: "Mar 12, 2024",
+  },
+  {
+    id: 3,
+    title: "Building a Strong Brand Identity",
+    date: "Mar 18, 2024",
   }
 ];
 

@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MdHomeFilled, MdWork, MdPhone, MdMessage } from "react-icons/md";
+import { MdHomeFilled, MdWork } from "react-icons/md";
+import { IoJournal } from "react-icons/io5";
+import { FaEnvelope } from "react-icons/fa";
+
 import "./Nav.scss";
 
 const Nav = () => {
@@ -20,12 +23,12 @@ const Nav = () => {
                     </li>
                     <li>
                         <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
-                            <MdMessage />
+                            <IoJournal />
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
-                            <MdPhone />
+                            <FaEnvelope />
                         </NavLink>
                     </li>
                 </ul>
