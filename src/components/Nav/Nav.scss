@@ -27,7 +27,6 @@ header {
 
         overflow: hidden;
         pointer-events: all;
-
         ul {
             display: flex;
             align-items: center;
@@ -66,7 +65,7 @@ header {
                 }
 
                 &.active {
-                    padding: .8rem 1rem;
+                    padding: .8rem 1.5rem;
                 }
             }
         }

@@ -8,9 +8,9 @@ const Contact = () => {
 
     return (
         <motion.section id='contact'
-            initial={{ filter: "blur(25px)" }}
+            initial={{ filter: "blur(15px)" }}
             animate={{ filter: "blur(0px)" }}
-            exit={{ filter: "blur(25px)" }}
+            exit={{ filter: "blur(15px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>Get in touch.</h1>
             <p>Got an idea for a website or mobile app, or need some tips on product design? Don't hesitate to get in touch. My schedule fills up fast, so the earlier you reach out, the better for both of us. </p>

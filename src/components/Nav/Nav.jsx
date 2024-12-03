@@ -7,9 +7,6 @@ import { FaEnvelope } from "react-icons/fa";
 import "./Nav.scss";
 
 const Nav = () => {
-    const scrolltop = () => {
-        scrollY(0)
-    }
 
     return (
         <header>
@@ -17,25 +14,25 @@ const Nav = () => {
                 <ul>
 
                     <li>
-                        <NavLink to="/" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Home" >
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Home" >
                             <MdHomeFilled />
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/works" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Projects">
+                        <NavLink to="/works" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Projects">
                             <MdWork />
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/blog" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
+                        <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
                             <IoJournal />
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/contact" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
+                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
                             <FaEnvelope />
                         </NavLink>
                     </li>

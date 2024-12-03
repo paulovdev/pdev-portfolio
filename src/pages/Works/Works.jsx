@@ -91,9 +91,9 @@ const Works = () => {
 
     return (
         <motion.section id='works'
-            initial={{ filter: "blur(25px)" }}
+            initial={{ filter: "blur(15px)" }}
             animate={{ filter: "blur(0px)" }}
-            exit={{ filter: "blur(25px)" }}
+            exit={{ filter: "blur(15px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}>
             <h1>My Works</h1>
             <p>Explore my portfolio of projects spanning from 2021 to 2024.</p>
