@@ -11,9 +11,9 @@ const HomeHeader = () => {
 
     return (
         <motion.div className="home-header"
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0, filter: "blur(25px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
-            exit={{ opacity: 0, filter: "blur(10px)" }}
+            exit={{ opacity: 0, filter: "blur(25px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
             <div className="profile-content">
@@ -55,9 +55,9 @@ const HomeHeader = () => {
                 <AnimatePresence>
                     {showMoreAbout && (
                         <motion.div className="modal-more-about"
-                            initial={{ opacity: 0, y: -10, filter: "blur(10px)" }}
+                            initial={{ opacity: 0, y: -10, filter: "blur(25px)" }}
                             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                            exit={{ opacity: 0, y: -10, filter: "blur(10px)" }}
+                            exit={{ opacity: 0, y: -10, filter: "blur(25px)" }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
                         >
                             <p>As we talked about, I'm a front-end developer passionate about music and games. In addition to creating amazing interfaces for the web, I also dedicate my free time to producing music and exploring the world of games.</p>

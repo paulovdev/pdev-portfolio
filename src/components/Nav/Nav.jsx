@@ -7,30 +7,39 @@ import { FaEnvelope } from "react-icons/fa";
 import "./Nav.scss";
 
 const Nav = () => {
+    const scrolltop = () => {
+        scrollY(0)
+    }
+
     return (
         <header>
             <nav>
                 <ul>
-                    <li >
-                        <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Home" >
+
+                    <li>
+                        <NavLink to="/" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Home" >
                             <MdHomeFilled />
                         </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Projects">
+                        <NavLink to="/works" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Projects">
                             <MdWork />
                         </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
+                        <NavLink to="/blog" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Blog">
                             <IoJournal />
                         </NavLink>
                     </li>
+
                     <li>
-                        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
+                        <NavLink to="/contact" onClick={scrolltop} className={({ isActive }) => isActive ? 'active' : ''} aria-label="Contact">
                             <FaEnvelope />
                         </NavLink>
                     </li>
+
                 </ul>
             </nav>
         </header>

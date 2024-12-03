@@ -83,9 +83,9 @@ const BlogPost = () => {
     return (
         <motion.section
             id="blog-post"
-            initial={{ opacity: 0, filter: "blur(10px)" }}
+            initial={{ opacity: 0, filter: "blur(25px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
-            exit={{ opacity: 0, filter: "blur(10px)" }}
+            exit={{ opacity: 0, filter: "blur(25px)" }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
         >
             <div className="back-to-blogs">

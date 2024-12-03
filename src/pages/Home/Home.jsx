@@ -5,11 +5,12 @@ import HomeWorks from "./HomeWorks/HomeWorks";
 import HomeSetup from './HomeSetup/HomeSetup';
 import HomeStack from "./HomeStack/HomeStack"
 import HomeExperience from "./HomeExperience/HomeExperience";
-
-import "./Home.scss";
 import HomeUpdates from './HomeUpdates/HomeUpdates';
 
+import "./Home.scss";
+
 const Home = () => {
+
     return (
         <section id="home">
             <HomeHeader />
